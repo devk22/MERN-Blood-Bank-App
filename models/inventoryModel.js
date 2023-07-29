@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const inventorySchema = new mongoose.Schema ({
     inventoryType: {
         type:String,
-        required: [true, 'Inventory type required'],
+        required: [true, 'Inventory type is necessary'],
         enum: ['in', 'out']
     },
     bloodGroup: {
